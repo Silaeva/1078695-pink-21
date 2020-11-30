@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Check status][check-image]][check-url]
 
 * Студент: [Anna Silaeva](https://up.htmlacademy.ru/adaptive/21/user/1078695).
-* Наставник: `Неизвестно`.
+* Наставник: Nastav Nick
 
 ---
 
