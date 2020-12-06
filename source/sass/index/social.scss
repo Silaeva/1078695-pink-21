@@ -1,0 +1,21 @@
+.social {
+  @include zero-indent;
+  width: 55%;
+}
+
+.social__list {
+  @include no-list;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  border: 3px solid rgba($main-color, 0.1);
+  border-radius: 50%;
+}

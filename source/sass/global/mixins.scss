@@ -1,0 +1,16 @@
+@mixin no-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin zero-indent {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin no-btn-style {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}

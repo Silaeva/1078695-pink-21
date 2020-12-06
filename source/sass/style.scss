@@ -1,1 +1,18 @@
-// Начните писать стили здесь
+@import "./global/global.scss";
+@import "./global/mixins.scss";
+@import "./global/variables.scss";
+@import "./global/font-face.scss";
+@import "./index/page-header.scss";
+@import "./index/nav.scss";
+@import "./index/promo.scss";
+@import "./index/stores.scss";
+@import "./index/offer.scss";
+@import "./index/advantages.scss";
+@import "./index/promise.scss";
+@import "./index/reviews.scss";
+@import "./index/toggles.scss";
+@import "./index/price.scss";
+@import "./index/contacts.scss";
+@import "./index/page-footer.scss";
+@import "./index/social.scss";
+@import "./index/copyright.scss";

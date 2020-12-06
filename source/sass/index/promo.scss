@@ -1,0 +1,64 @@
+.promo {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $main-color;
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -63px;
+}
+
+.promo--menu-closed {
+  padding-top: 90px;
+  background-position-y: top;
+}
+
+.promo__slogan {
+  @include zero-indent;
+
+  margin-bottom: 30px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+}
+
+.promo__img {
+  margin-bottom: 28px;
+}
+
+.promo__btn {
+  width: 80%;
+  min-height: 55px;
+  margin-bottom: 30px;
+
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.promo__desc {
+  width: 88%;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  color: #ffffff;
+}
