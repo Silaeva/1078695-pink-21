@@ -1,0 +1,27 @@
+.nav__list {
+  @include no-list;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__list--menu-closed {
+  display: none;
+}
+
+.nav__item {
+  min-height: 63px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+
+  background-color: $main-color;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000;
+}

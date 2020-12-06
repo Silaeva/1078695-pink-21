@@ -1,0 +1,10 @@
+.copyright__developed {
+  @include zero-indent;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: $main-color;
+}

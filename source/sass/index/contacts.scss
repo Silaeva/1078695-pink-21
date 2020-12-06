@@ -1,0 +1,84 @@
+.contacts {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px 0;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 170px;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 50px;
+
+    background:
+      linear-gradient(to right top, transparent 50%, #ffffff 50%) left / 50.025% 100% no-repeat,
+      linear-gradient(to left top, transparent 50%, #ffffff 50%) right / 50.025% 100% no-repeat;
+  }
+}
+
+.contacts__call-to-action {
+  @include zero-indent;
+
+  margin-bottom: 45px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $main-color;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__addres {
+  @include zero-indent;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__call-us,
+.contacts__write-us,
+.contacts__visit-us {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: $main-color;
+}
+
+.contacts__phone-number,
+.contacts__email-address,
+.contacts__where {
+  margin-bottom: 33px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: $bright-color;
+}
+
+.contacts__map {
+  width: calc(100vw - 15px);
+  height: 200px;
+
+  background-image: url("../../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.contacts__map iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}

@@ -1,0 +1,20 @@
+.toggles {
+  width: 60px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggles__item {
+  width: 6px;
+  height: 6px;
+  background-color: rgba($main-color, 0.3);
+
+  border-radius: 50%;
+}
+
+.toggles__item--current {
+  background-color: #ffffff;
+
+  box-shadow: 0 0 0 3px $main-color;
+}

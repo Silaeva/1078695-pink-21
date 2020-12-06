@@ -1,0 +1,47 @@
+.advantages {
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 270px;
+  padding-left: 20px;
+
+
+  background-color: $light-bg;
+  background-image: url("../../img/phone-info-mobile.png ");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 112%;
+}
+
+.advantages__list {
+  @include no-list;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages__item {
+  text-align: center;
+}
+
+.advantages__item-header {
+  @include zero-indent;
+
+  margin-bottom: 24px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.advantages__item-text {
+  @include zero-indent;
+
+  margin-bottom: 43px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
