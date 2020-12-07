@@ -1,0 +1,35 @@
+.form {
+  padding-bottom: 35px;
+}
+
+.form__submit {
+  width: 86%;
+  min-height: 60px;
+  margin: 0 7%;
+  margin-bottom: 40px;
+
+  background-color: $form-btn-color;
+  border: none;
+  border-radius: 3px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.form__legend {
+  @include zero-indent;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color:$main-color;
+}
+
+.form__legend-asterisk {
+  color: $bright-color;
+}
