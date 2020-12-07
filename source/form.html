@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="body-form">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a href="#" class="page-header__logo">
@@ -27,6 +27,7 @@
 
     <main class="form-page">
       <h1 class="form-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="form-page__conditions">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
       <form class="form-page__form form" action="https://echo.htmlacademy.ru"  method="post">
         <fieldset class="form__user-data user-data">
@@ -47,35 +48,35 @@
             </ul>
         </fieldset>
 
-        <fieldset class="form__achievs achievs">
-          <legend class="achievs__legend">Ваши безбашенные достижения в путешествии</legend>
+        <section class="form__achievs achievs">
+          <h2 class="achievs__title">Ваши безбашенные достижения в путешествии</h2>
           <ul class="achievs__list">
-            <li>
-              <input class="achievs__input" type="checkbox" id="shark-selfie" name="shark-selfie" checked>
+            <li class="achievs__item">
+              <input class="achievs__input visually-hidden" type="checkbox" id="shark-selfie" name="shark-selfie" checked>
               <label class="achievs__label" for="shark-selfie">Сделал селфи с акулой</label>
             </li>
-            <li>
-              <input class="achievs__input" type="checkbox" id="sunburnt" name="sunburnt" checked>
+            <li class="achievs__item">
+              <input class="achievs__input visually-hidden" type="checkbox" id="sunburnt" name="sunburnt" checked>
               <label class="achievs__label" for="sunburnt">Обгорел на пляже</label>
             </li>
-            <li>
-              <input class="achievs__input" type="checkbox" id="seen-chuck" name="seen-chuck">
+            <li class="achievs__item">
+              <input class="achievs__input visually-hidden" type="checkbox" id="seen-chuck" name="seen-chuck">
               <label class="achievs__label" for="seen-chuck">Видел Чака Норриса</label>
             </li>
-            <li>
-              <input class="achievs__input" type="checkbox" id="souvenirs" name="souvenirs">
+            <li class="achievs__item">
+              <input class="achievs__input visually-hidden" type="checkbox" id="souvenirs" name="souvenirs">
               <label class="achievs__label" for="souvenirs">Накупил сувениров</label>
             </li>
-            <li>
-              <input class="achievs__input" type="checkbox" id="tower-holder" name="tower-holder" checked>
+            <li class="achievs__item">
+              <input class="achievs__input visually-hidden" type="checkbox" id="tower-holder" name="tower-holder" checked>
               <label class="achievs__label" for="tower-holder">Удержал башню</label>
             </li>
-            <li>
-              <input class="achievs__input" type="checkbox" id="crushed-hotel" name="crushed-hotel">
+            <li class="achievs__item">
+              <input class="achievs__input visually-hidden" type="checkbox" id="crushed-hotel" name="crushed-hotel">
               <label class="achievs__label" for="crushed-hotel">Разгромил отель</label>
             </li>
           </ul>
-        </fieldset>
+        </section>
 
         <fieldset class="form__contacts user-contacts">
           <legend class="visually-hidden">Контакты</legend>
@@ -91,32 +92,31 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__choose-os choose-os">
-          <legend class="choose-os__legend">С каким приложением путешествовали?</legend>
+        <section class="form__choose-os choose-os">
+          <h2 class="choose-os__title">С каким приложением путешествовали?</h2>
           <ul class="choose-os__list">
             <li class="choose-os__item">
-              <input class="choose-os__item" type="radio" name="choose-os" id="ios" checked>
+              <input class="visually-hidden" type="radio" name="choose-os" id="ios" checked>
               <label class="choose-os__label" for="ios">Pink для iOS</label>
             </li>
             <li class="choose-os__item">
-              <input class="choose-os__item" type="radio" name="choose-os" id="android">
+              <input class="visually-hidden" type="radio" name="choose-os" id="android">
               <label class="choose-os__label" for="android">Pink на Android</label>
             </li>
             <li class="choose-os__item">
-              <input class="choose-os__item" type="radio" name="choose-os" id="windows">
+              <input class="visually-hidden" type="radio" name="choose-os" id="windows">
               <label class="choose-os__label" for="windows">Windows Phone</label>
             </li>
           </ul>
-        </fieldset>
+        </section>
 
-        <fieldset class="form__desc-emotions desc-emotions">
-          <legend class="desc-emotions__legend">Опишите свои эмоции</legend>
-          <!-- style="resize: none" для textarea -->
-          <textarea class="desc-emotions__textarea" name="desc-emotions" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-        </fieldset>
+        <section class="form__desc-emotions desc-emotions">
+          <h2 class="desc-emotions__title">Опишите свои эмоции</h2>
+          <textarea class="desc-emotions__textarea" name="desc-emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </section>
 
         <button class="form__submit" type="submit">отправить форму</button>
-        <p class="form__legend">*- обязательные поля</p>
+        <p class="form__legend"><span class="form__legend-asterisk">*</span>&nbsp;&mdash; обязательные поля</p>
       </form>
 
     </main>
@@ -161,13 +161,15 @@
       </div>
     </footer>
 
-    <div class="form-popup form-popup__success">
+    <div class="form-popup form-popup--success form-popup--success-closed">
       <h2 class="form-popup__heading">Ваша заявка отправлена</h2>
       <p class="form-popup__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <button class="form-popup__close-btn" type="button">Закрыть окно</button>
+      <div class="form-popup__wrapper">
+        <button class="form-popup__close-btn" type="button">Закрыть окно</button>
+      </div>
     </div>
 
-    <div class="form-popup form-popup__error">
+    <div class="form-popup form-popup--error form-popup--error-closed">
       <h2 class="form-popup__heading">Что-то пошло не так!</h2>
       <p class="form-popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="form-popup__close-btn" type="button">ок</button>

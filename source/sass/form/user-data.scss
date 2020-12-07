@@ -1,0 +1,40 @@
+.user-data {
+  @include zero-indent;
+
+  border: none;
+  padding: 0 20px 44px;
+}
+
+.user-data__list {
+  @include no-list;
+}
+
+.user-data__item {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.user-data__label {
+  padding-left: 23px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $bright-color;
+  text-transform: uppercase;
+}
+
+.user-data__input {
+  padding: 23px 20px;
+
+  background-color: #ffffff;
+  border: 2px solid $cell-border;
+}
+
+.user-data__input::placeholder {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $main-color;
+}

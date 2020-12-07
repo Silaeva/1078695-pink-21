@@ -1,0 +1,30 @@
+.desc-emotions {
+  padding: 42px 20px 52px;
+}
+
+.desc-emotions__title {
+  @include zero-indent;
+
+  margin-bottom: 22px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $bright-color;
+}
+
+.desc-emotions__textarea {
+  width: 100%;
+  padding: 20px;
+  min-height: 197px;
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $main-color;
+
+  border: 2px solid $cell-border;
+  resize: none;
+}
