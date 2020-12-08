@@ -25,21 +25,20 @@
       </nav>
     </header>
 
-    <main class="page-catalog">
-      <h1 class="page-catalog__heading">Фотографии пользователей</h1>
-      <p class="page-catalog__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <main class="page-gallery">
+      <h1 class="page-gallery__heading">Фотографии пользователей</h1>
+      <p class="page-gallery__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
-      <ul class="page-catalog__photo-list photo-list">
-        <li class="photo-list__card card card--pano"> <!--  card--pano:before для красного лейбла -->
-          <!-- Img { max-width: 100%;} для резинового изображения -->
+      <ul class="page-gallery__photo-list photo-list">
+        <li class="photo-list__card card card--pano">
           <img class="card__img card__img--pano" src="./img/panorama-mobile.jpg" alt="фотография пользователя">
           <div class="card__comment comment">
-            <p>
+            <p class="comment__user">
               <span class="comment__user-name">Анна</span>
               <span class="comment_time">(5 минут назад)</span>
             </p>
             <p class="comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p>
+            <p class="comment__likes">
               <button class="comment__like-btn" type="button" aria-label="кнопка в форме сердечка для отметки нравится"></button>
               <span class="comment__likes-number">Нравится: 215</span>
             </p>
@@ -48,12 +47,12 @@
         <li class="photo-list__card card">
           <img class="card__img" src="./img/photo-1-mobile.jpg" alt="фотография пользователя">
           <div class="card__comment comment">
-            <p>
+            <p class="comment__user">
               <span class="comment__user-name">Левон</span>
               <span class="comment_time">(5 часов назад)</span>
             </p>
             <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p>
+            <p class="comment__likes">
               <button class="comment__like-btn" type="button" aria-label="кнопка в форме сердечка для отметки нравится"></button>
               <span class="comment__likes-number">Нравится: 356</span>
             </p>
@@ -62,12 +61,12 @@
         <li class="photo-list__card card">
           <img class="card__img" src="./img/photo-2-mobile.jpg" alt="фотография пользователя">
           <div class="card__comment comment">
-            <p>
+            <p class="comment__user">
               <span class="comment__user-name">Антон</span>
               <span class="comment_time">(12 часов назад)</span>
             </p>
             <p class="comment__text">Соседи будут рады!</p>
-            <p>
+            <p class="comment__likes">
               <button class="comment__like-btn" type="button" aria-label="кнопка в форме сердечка для отметки нравится"></button>
               <span class="comment__likes-number">Нравится: 666</span>
             </p>
@@ -76,12 +75,12 @@
         <li class="photo-list__card card">
           <img class="card__img" src="./img/photo-3-mobile.jpg" alt="фотография пользователя">
           <div class="card__comment comment">
-            <p>
+            <p class="comment__user">
               <span class="comment__user-name">Борис</span>
               <span class="comment_time">(20 часов назад)</span>
             </p>
             <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p>
+            <p class="comment__likes">
               <button class="comment__like-btn" type="button" aria-label="кнопка в форме сердечка для отметки нравится"></button>
               <span class="comment__likes-number">Нравится: 215</span>
             </p>
@@ -90,12 +89,12 @@
         <li class="photo-list__card card">
           <img class="card__img" src="./img/photo-4-mobile.jpg" alt="фотография пользователя">
           <div class="card__comment comment">
-            <p>
+            <p class="comment__user">
               <span class="comment__user-name">Сергей</span>
               <span class="comment_time">(25 часов назад)</span>
             </p>
             <p class="comment__text">Самая кубанская в мире!</p>
-            <p>
+            <p class="comment__likes">
               <button class="comment__like-btn" type="button" aria-label="кнопка в форме сердечка для отметки нравится"></button>
               <span class="comment__likes-number">Нравится: 4</span>
             </p>
@@ -104,12 +103,12 @@
         <li class="photo-list__card card">
           <img class="card__img" src="./img/photo-5-mobile.jpg" alt="фотография пользователя">
           <div class="card__comment comment">
-            <p>
+            <p class="comment__user">
               <span class="comment__user-name">Максим</span>
               <span class="comment_time">(40 часов назад)</span>
             </p>
             <p class="comment__text">Где снег-то?</p>
-            <p>
+            <p class="comment__likes">
               <button class="comment__like-btn" type="button" aria-label="кнопка в форме сердечка для отметки нравится"></button>
               <span class="comment__likes-number">Нравится: 150</span>
             </p>
@@ -118,25 +117,25 @@
         <li class="photo-list__card card">
           <img class="card__img" src="./img/photo-6-mobile.jpg" alt="фотография пользователя">
           <div class="card__comment comment">
-            <p>
+            <p class="comment__user">
               <span class="comment__user-name">Надежда</span>
               <span class="comment_time">(45 часов назад)</span>
             </p>
             <p class="comment__text">Всем GM и взаимные лайки!</p>
-            <p>
+            <p class="comment__likes">
               <button class="comment__like-btn" type="button" aria-label="кнопка в форме сердечка для отметки нравится"></button>
               <span class="comment__likes-number">Нравится: 2560</span>
             </p>
           </div>
         </li>
       </ul>
-      <div class="page-catalog__call-to-action call-to-action">
+      <div class="page-gallery__call-to-action call-to-action">
         <p class="call-to-action__text">
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
         </p>
       </div>
 
-      <section class="page-catalog__post post">
+      <section class="page-gallery__post post">
         <h2 class="visually-hidden">Загрузка и редактирование фотографии</h2>
         <form class="post__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="post__load-photo" for="file" aria-label="Выберите фотографию для загрузки в приложение"></label>
@@ -178,13 +177,13 @@
               </li>
             </ul>
             <div class="edit__effect-level--mobile">
-              <div class="edit__scale"></div>
-              <button class="edit__scale-btn"></button>
+              <div class="edit__scale--mobile"></div>
+              <button class="edit__scale-btn--mobile"></button>
             </div>
           </div>
 
-          <button type="submit">Запостить</button>
-          <button type="reset">Отмена</button>
+          <button class="post__button post__button--submit" type="submit">Запостить</button>
+          <button class="post__button post__button--reset" type="reset" disabled>Отмена</button>
 
         </form>
       </section>

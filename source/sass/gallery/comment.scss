@@ -1,0 +1,61 @@
+.comment {
+  width: 100%;
+  padding: 25px 10px 25px 17px;
+
+  background-color: $light-bg;
+}
+
+.comment__user {
+  @include zero-indent;
+}
+
+.comment__user-name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-color;
+}
+
+.comment_time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+.comment__text {
+  @include zero-indent;
+
+  margin-bottom: 20px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-color;
+}
+
+.comment__likes {
+  @include zero-indent;
+}
+
+.comment__like-btn {
+  width: 13px;
+  height: 12px;
+  margin-right: 15px;
+
+  background-color: transparent;
+  border: none;
+  background-image: url("../../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.comment__likes-number {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: $bright-color;
+}
